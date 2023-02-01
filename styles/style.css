@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(0, 145, 255);
+    background: linear-gradient(to left, rgb(0, 145, 255), rgb(2, 104, 182));
+    overflow-x:hidden
+}
+
+header {
+    width: 100vw;
+    height: 25vh;
+    background-color: red;
+    background: linear-gradient(to right, #4232ee, #fd1d1d, #fcb045);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    flex-grow: 2;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+.logo {
+    height: 160px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 166, 0);
+}
+
+nav a {
+    width: 170px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: .4rem;
+    font-weight: bold;
+    background-color: rgb(0, 89, 255);
+    transition: 0.5s;
+}
+
+.active {
+    background-color: red;
+    text-transform: uppercase;
+    border: 3px solid white;
+    box-shadow: 0px 5px 5px rgb(0, 255, 238);
+}
+
+nav a:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: black;
+    border: 2px solid white;
+}
+
+section {
+    padding: 0.5rem 5rem 2rem 5rem;
+    width: 100vw;
+    font-size: 1.2rem;
+}
+
+h2 {
+    text-align: center;
+    padding: .5rem;
+    background-color: red;
+    border: 3px solid yellow;
+    border-radius: 2rem;
+}
+
+p, h3, li {
+    margin-top: 1.1rem;
+}
+
+table {
+    padding-top: 1.1rem;
+    margin: auto;
+    text-align: center;
+}
+td, th {
+    padding: .2rem 1rem;
+}
+
+li li {
+    list-style: lower-latin;
+}
+
+ul li {
+    list-style: circle;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+footer img{
+    height: 200px;
+    box-shadow: 5px 5px 5px red;
+    transition: all .5s;
+}
+footer img:hover {
+    transform: scale(1.2);
+}
+footer h4{
+    width: 100vw;
+}
